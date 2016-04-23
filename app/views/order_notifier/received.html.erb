@@ -1,0 +1,16 @@
+<h1>You successfully completed your order!</h1>
+
+<p>
+  Your order of:
+</p>
+
+<table>
+  <tr>
+    <th colspan="2">Qty</th><th>Description</th>
+  </tr>
+  <%= render @order.line_items %>
+</table>
+
+<p>You will receive an email when your order ships.</p>
+
+<p>Amazing Bookstore</p>

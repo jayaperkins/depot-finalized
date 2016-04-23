@@ -1,0 +1,9 @@
+o: ActiveSupport::Cache::Entry:@valueI"‰      <div class="entry">
+        <img src="/assets/book-4ead2889c6bddff4a6d41ca45000e4acf74f5df1570dad53da44871448271a65.jpg" alt="Book 4ead2889c6bddff4a6d41ca45000e4acf74f5df1570dad53da44871448271a65" />
+        <h3>The Lord Of The Rings</h3>
+        <p>The best book in the world!</p>
+        <div class="price_line">
+          <span class="price">$99.95</span>
+        </div>
+      </div>
+:ET:@created_atf1455856079.686381:@expires_in0

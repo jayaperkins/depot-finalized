@@ -1,0 +1,11 @@
+Dear <%= @order.name %>
+
+Your order has shipped and should arrive in a few days.
+
+Just a reminder...your order included:
+
+<%= render @order.line_items -%>
+
+Enjoy!
+
+Amazing Bookstore

@@ -1,0 +1,13 @@
+Dear <%= @order.name %>
+
+Your order from Amazing Bookstore has been received. You ordered:
+
+<%= render @order.line_items -%>
+
+We will send an email upon shipment of your order.
+
+If you would like to edit your order, please login to your account and click the gear icon under the recent orders link.
+
+Sincerely,
+
+Amazing Bookstore
