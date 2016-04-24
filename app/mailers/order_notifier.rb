@@ -1,5 +1,5 @@
 class OrderNotifier < ActionMailer::Base
-  default from: "Amazing Bookstore <skandar1234567@gmail.com>"
+  default from: "Christopher Enloe Compositions <skandar1234567@gmail.com>"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
@@ -10,7 +10,7 @@ class OrderNotifier < ActionMailer::Base
     @order = order
 
     mail to: order.email,
-        subject: "Amazing Bookstore has received your order"
+        subject: "Your download link"
   end
 
   # Subject can be set in your I18n file at config/locales/en.yml
@@ -22,6 +22,6 @@ class OrderNotifier < ActionMailer::Base
     @order = order
 
     mail to: order.email,
-        subject: "Amazing Bookstore order has shipped!"
+        subject: "Your order has shipped"
   end
 end

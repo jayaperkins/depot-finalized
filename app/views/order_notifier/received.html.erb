@@ -1,4 +1,4 @@
-<h1>You successfully completed your order!</h1>
+<h1 style="font-size: 1rem; font-weight: normal">Thank you for your order!</h1>
 
 <p>
   Your order of:
@@ -6,11 +6,9 @@
 
 <table>
   <tr>
-    <th colspan="2">Qty</th><th>Description</th>
+    <th colspan="2" style="padding: 1rem;">Qty</th><th class="padding: 1rem;">Description</th>
   </tr>
   <%= render @order.line_items %>
 </table>
 
-<p>You will receive an email when your order ships.</p>
-
-<p>Amazing Bookstore</p>
+<h2 class="padding: 1rem;">Soli Deo Gloria,<br>Christopher Enloe</h2>

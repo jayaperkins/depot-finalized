@@ -2,6 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.product-title {
+  margin: 1rem;
+}
+
 .products {
   table {
     border-collapse: collapse;
@@ -27,7 +37,7 @@
     dt {
       color: #730E15;
       font-weight: bold;
-      font-size: larger;
+      font-size: 1rem;
     }
 
     dd {
@@ -48,4 +58,14 @@
   .list_line_odd {
     background: #BBBBBB;
   }
+}
+
+.new-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 2rem;
+  margin: 1rem;
+  background-color: cornflowerblue;
 }
