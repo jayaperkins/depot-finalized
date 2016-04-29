@@ -5,6 +5,8 @@ class ApplicationController < ActionController::Base
 
   before_action :authorize
 
+  before_action :check_for_login
+
   before_action :set_i18n_locale_from_params
 
   def set_i18n_locale_from_params
@@ -24,6 +26,12 @@ class ApplicationController < ActionController::Base
   end
 
   protected
+
+  def check_for_login
+    if User.find_by(id: session[:user_id])
+      @logged_in_user_name = User.find_by(id: session[:user_id]).name
+    end
+  end
 
   def authorize
     unless User.find_by(id: session[:user_id]) || User.count.zero?

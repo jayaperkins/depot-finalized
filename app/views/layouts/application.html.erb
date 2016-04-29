@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Christopher Enloe - Store</title>
+  <title>Do Not Purchase!</title>
   <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -48,6 +48,9 @@
             <li><%= link_to 'Products', products_path %></li>
             <li><%= link_to 'Users', users_path %></li>
           </ul>
+          <%= hidden_div_if(!session[:user_id],id: 'login_welcome') do %>
+              <p>Logged in as <%= @logged_in_user_name %></p>
+          <% end %>
           <%= button_to 'Logout', logout_path, method: :delete %>
       <% end %>
     </div>
