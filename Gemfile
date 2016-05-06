@@ -49,7 +49,9 @@ group :development do
   gem 'spring'
 end
 
-gem 'pg'
+group :production do
+  gem 'pg'
+end
 
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 
